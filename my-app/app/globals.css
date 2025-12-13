@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+/* 
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */ 
+
+/* Navbar */
+.menu {
+  display: none;
+}
+
+.my-background {
+  background-image: url("../public/Header.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-mb {
+  display: none;
+}
+.my-background-mb {
+  background-image: url("../public/HeaderMb.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+.add-col {
+  position: relative;
+}
+.add-col::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  width: 1px;
+  height: 65px;
+  background-color: var(--color-gray-300);
+}
+@media (max-width: 991px) {
+  .menu {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  /* .menu {
+    display: block;
+  } */
+  .my-background {
+    display: none;
+  }
+  .header-mb {
+    display: block;
+  }
+}
+.line{
+  border-top: 1px solid #e5e7eb;
+  
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 25px;     
+  height: 25px;    
+}
