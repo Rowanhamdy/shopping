@@ -1,3 +1,7 @@
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://shopping-rosy-theta.vercel.app/)
+
+
 ## 🚀 Live Demo
 
 🔗 **Live Website:**  
