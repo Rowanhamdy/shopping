@@ -8,13 +8,14 @@ export default async function ProductDetails({ params }) {
   const { id } = await params;
   const res = await fetch(`https://dummyjson.com/products/${id}`);
   const product = await res.json();
+  
 
   return (
     <div className="container mx-auto p-4 ">
       <div className="flex flex-col md:flex-row gap-10">
         <ProductDisplay product={product} />
         <div>
-          <p className="mt-4  text-xl font-bold text-[49px] ">
+          <p className="mt-4  text-xl font-bold text-[28px] md:text-[49px] ">
             {product.title}
           </p>
           <p className=" text-2xl  text-amber-400">{product.rating}/5</p>

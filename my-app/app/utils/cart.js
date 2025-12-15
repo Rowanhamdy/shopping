@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export default function addToCart(product , quantity=1) {
     if(typeof window === 'undefined') return;

@@ -3,6 +3,13 @@ import ProductsWithFilters from "../components/ProductsWithFilters";
 import ProductCarousel from "../components/ProductCarousel";
 import { fetchProducts } from "../utils/fetchProducts";
 
+
+export const metadata = {
+  title: "Brands",
+  description:
+    "Browse all available fashion brands at Shop.Co and discover your favorite labels.",
+};
+
 export default async function Brands() {
   const products = await fetchProducts();
 

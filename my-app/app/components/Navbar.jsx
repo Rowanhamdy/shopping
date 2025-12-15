@@ -53,8 +53,13 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <button className="menu" onClick={() => setIsOpen(!isOpen)}>
-          <img src="./Menu.svg" alt="menu" loading="eager"/>
-        </button>
+<Image
+  src="/Menu.svg"
+  alt="menu"
+  width={24}
+  height={24}
+  loading="eager"
+/>        </button>
         <div>
           <Image
             src="/SHOP.CO.svg"

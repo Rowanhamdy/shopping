@@ -22,7 +22,7 @@ export default function OneProduct({ product ,brand}) {
       <div className="flex justify-between items-center">
         <div>
           {" "}
-          <h2 className="font-bold">{product.title}</h2>
+          <h2 className="font-bold ">{product.title}</h2>
           <h2 className="font-bold text-amber-300">{product.rating}</h2>
           <h2 className="font-bold">$ {product.price}</h2>
         </div>

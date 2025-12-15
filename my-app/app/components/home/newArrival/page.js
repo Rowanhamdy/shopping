@@ -11,7 +11,7 @@ export default async function NewArrival() {
 
   return (
     <>
-      <div className="mt-60 mb-10 hidden   md:block lg:mt-10">
+      <div className="mt-10 mb-10 hidden   md:block lg:mt-10">
         <ProductsCard sectionTitle={"New Arrivals"} products={products} />
 
         <div className="text-center ">
@@ -25,7 +25,7 @@ export default async function NewArrival() {
         </div>
       </div>
 
-      <div className="mt-70 mb-10 mx-5  md:hidden">
+      <div className="mt-10 mb-10 mx-5  md:hidden">
         <ProductCarousel title={"New Arrivals"} products={products} />
         <div className="text-center mt-10">
           <Link

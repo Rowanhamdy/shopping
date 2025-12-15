@@ -69,14 +69,14 @@ export default function Cart() {
                     </div>
                     <div className="ml-auto  ">
                       <QuantityCounter
-                         productId={item.id}
+                        productId={item.id}
                         initialQuantity={item.quantity}
                         onChange={(qty) => updateQuantity(item.id, qty)}
                         onCartUpdate={() => {
                           const storedCart =
                             JSON.parse(localStorage.getItem("cart")) || [];
                           setCart(storedCart);
-                          window.dispatchEvent(new Event("storage")); 
+                          window.dispatchEvent(new Event("storage"));
                         }}
                       />
                     </div>

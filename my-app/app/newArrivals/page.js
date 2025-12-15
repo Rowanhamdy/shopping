@@ -1,10 +1,11 @@
-import Link from "next/link";
-
-import AddToMyCart from "../addToMyCart/page";
 import ProductCarousel from "../components/ProductCarousel";
-import ProductsCard from "../components/ProductsCard";
 import ProductsWithFilters from "../components/ProductsWithFilters";
 
+export const metadata = {
+  title: "New Arrivals",
+  description:
+    "Explore the latest fashion arrivals and newest collections at Shop.Co.",
+};
 export default async function NewArrivals() {
   let products = [];
   const res1 = await fetch("https://dummyjson.com/products/category/beauty", {
