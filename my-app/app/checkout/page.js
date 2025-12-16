@@ -11,11 +11,13 @@ const stripePromise = loadStripe(
 export default function CheckoutPage() {
   return (
     <div className="container mx-auto mt-20">
-      <h1 className="font-bold text-3xl mb-10">Checkout</h1>
-
-      <Elements stripe={stripePromise}>
+      <h1 className="font-bold text-3xl mb-10 m-5">Checkout</h1>
+        <div className="m-5">
+            <Elements stripe={stripePromise}>
         <CheckoutForm />
       </Elements>
+        </div>
+    
     </div>
   );
 }

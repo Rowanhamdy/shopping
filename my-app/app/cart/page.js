@@ -44,13 +44,13 @@ export default function Cart() {
     router.push("/checkout");
   };
   return (
-    <div className="container mx-auto mb-60">
-      <h1 className=" font-bold text-[48px] mt-10 mb-10">YOUR CART</h1>
+    <div className="container mx-auto mb-60 ">
+      <h1 className=" font-bold text-[48px] mt-10 mb-10 p-5">YOUR CART</h1>
 
-      <div>
+      <div className="">
         {cart.length > 0 ? (
           <>
-            <div className="grid grid-cols-2 m-5">
+            <div className="grid grid-cols-2 m-5 ">
               <div className="col-span-2 md:col-span-1 border border-gray-200 p-5 rounded-2xl">
                 {cart.map((item) => (
                   <div key={item.id} className="flex items-center gap-4 mb-10">

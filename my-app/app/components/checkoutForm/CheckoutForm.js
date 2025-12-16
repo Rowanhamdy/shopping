@@ -19,9 +19,13 @@ export default function CheckoutForm() {
     const res = await fetch("/api/payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 2000 }),
+      body: JSON.stringify({
+        cartItems: JSON.parse(localStorage.getItem("cart")).map((item) => ({
+          id: item.id,
+          quantity: item.quantity,
+        })),
+      }),
     });
-
     const { clientSecret } = await res.json();
 
     // 2. Confirm card payment
